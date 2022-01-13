@@ -10,17 +10,15 @@ namespace MethodAssignment
     {
         public double GetAdd(int data)
         {
-            data = data + 7;
-            return GetSubtract(data);
+            return data + 7;
         }
 
-        private double GetSubtract(double data)
+        public double GetSubtract(double data)
         {
-            data = data - 4;
-            return GetDivide(data);
+            return data - 4;
         }
 
-        private double GetDivide(double data)
+        public double GetDivide(double data)
         {
             return data / 2;
         }

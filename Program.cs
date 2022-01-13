@@ -19,7 +19,19 @@ namespace MethodAssignment
             var operatorObject = new Operator();
             var result = operatorObject.GetAdd(Data);
             
-            Console.WriteLine("Your answer is " + result);
+            Console.WriteLine("\n" + Data + " + 7 = " + result);
+            Console.ReadLine();
+
+            var operatorObject2 = new Operator();
+            var result2 = operatorObject2.GetSubtract(result);
+
+            Console.WriteLine(result + " - 4 = " + result2);
+            Console.ReadLine();
+
+            var operatorObject3 = new Operator();
+            var result3 = operatorObject3.GetDivide(result2);
+
+            Console.WriteLine(result2 + " / 2 = " + result3);
             Console.ReadLine();
         }
     }
